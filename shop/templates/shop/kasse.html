@@ -1,7 +1,56 @@
 {% extends "shop\start.html" %}
 
+{% load static %}
+
 {% block content %}
 
-<h1>Kasse</h1>
+    <div class="row mt-4">
+        <div class="col-4">
+            <div class="shadow p-4">
+                <h4>Bestellübersicht</h4>
+                <hr />
+                <div class="d-flex">
+                    <p class="p-2">1</p>
+                    <p class="me-auto p-2">Köpfhörer</p>
+                    <p class="p-2">99€</p>
+                </div>
+                <hr />
+                <div class="d-flex">
+                    <p class="p-2 me-auto fw-bold">Menge: 1</p>
+                    <p class="p-2 fw-bold">Gesamtpreis: 99€</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="shadow p-4">
+                <form class="row g-3">
+                    <div class="col-md-12">
+                        <label for="inputName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="inputName">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Straße & Hausnummer</label>
+                        <input type="text" class="form-control" id="inputAddress">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputPLZ" class="form-label">Postleitzahl</label>
+                        <input type="text" class="form-control" id="inputPLZ">
+                    </div>
+                    <div class="col-md-10">
+                        <label for="inputCity" class="form-label">Stadt</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="inputEmail4" class="form-label">E-Mail</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-12 d-flex justify-content-end">
+                        <button type="submit" class="btn btn-secondary">weiter</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
 
 {% endblock content %}
