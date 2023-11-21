@@ -4,9 +4,9 @@
         <a class="navbar-brand link-light" href="{% url 'shop'%}"><img src="{% static 'pics/logo.png' %}" alt="Logo" height="60vw" /></a>
         <div class="navbar-nav">
             <div class="d-flex">
-                <a class="nav-link link-light p-2" href="{% url 'shop'%}">Shop</a>
-                <a class="nav-link link-light p-2" href="{% url 'warenkorb'%}">Warenkorb</a>
-                <a class="nav-link link-light p-2" href="{% url 'kasse'%}">Kasse</a>
+                <a class="nav-link link-light p-2" href="">Login</a>
+                <a class="nav-link link-light p-2" href="{% url 'warenkorb'%}"><img src="{% static 'pics/cart.png'%}" alt="Warenkorb" height="25vw"><span class="position-absolute top-25 start-95 translate-middle badge rounded-pill bg-danger">5</span></a>
+                {% comment %} <a class="nav-link link-light p-2" href="{% url 'kasse'%}">Kasse</a> {% endcomment %}
             </div>
         </div>
     </div>
