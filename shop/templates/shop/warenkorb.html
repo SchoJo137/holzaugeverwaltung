@@ -1,7 +1,55 @@
 {% extends "shop\start.html" %}
 
+{% load static %}
+
 {% block content %}
 
-<h1>Warenkorb</h1>
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="shadow p-2 mb-4">
+                <div class="d-flex justify-content-end">
+                    <p class="fw-bold p-2">Gesamtpreis: 50€</p>
+                    <p><a class="btn btn-danger" href="{% url 'kasse' %}">Kasse</a></p>
+                </div>
+            </div>
+            <div class="shadow p-2 mb-4">
+                <table class="table table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">Nr.</th>
+                        <th scope="col">Bild</th>
+                        <th scope="col">Artikel</th>
+                        <th scope="col">Menge</th>
+                        <th scope="col">Preis</th>
+                    </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><img src="{% static 'pics/holz.jpg' %}" width="50" height="50"></td>
+                        <td>Holzringe</td>
+                        <td>1</td>
+                        <td>99€</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><img src="{% static 'pics/holz.jpg' %}" width="50" height="50"></td>
+                        <td>Holzringe</td>
+                        <td>1</td>
+                        <td>99€</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><img src="{% static 'pics/holz.jpg' %}" width="50" height="50"></td>
+                        <td>Holzringe</td>
+                        <td>1</td>
+                        <td>99€</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
 {% endblock content %}
+
